@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Mulish&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+/* Navbar style */
+
+#nav {
+  background: url("img/textAnalyzerbg.png");
+  color: #fff;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  font-size: 25px;
+  font-family: "Mulish", sans-serif;
+}
+
+.navbar h1 i {
+  padding-right: 10px;
+}
+
+/* Text Analyzer style */
+
+.container {
+  width: 60vw;
+  margin: 4rem auto;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+
+.container h2 {
+  font-size: 30px;
+  margin: 15px;
+}
+
+.container p {
+  margin: 10px 0 20px 0;
+}
+
+.container form {
+  width: 60vw;
+  height: 40vh;
+  /* background-color: red; */
+}
+
+.taskResult {
+  width: 60vw;
+  margin: 30px auto;
+  font-family: "Baloo 2", cursive;
+}
+
+.container form textarea,
+.taskResult {
+  width: 60vw;
+  height: 40vh;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  margin: 20px 0;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border: none;
+  background: #008bff;
+}
+
+.btn:hover {
+  border: 2px solid #008bff;
+  color: #008bff;
+  background: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Result style */
+
+.result {
+  width: 60vw;
+  margin: 50px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.result h2 {
+  font-size: 30px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.result .result-box {
+  height: 3rem;
+}
+
+.result-box span {
+  width: 100%;
+  display: inline-block;
+}
+
+.result-box span:first-child {
+  width: 70%;
+}
+
+.result-box span:last-child {
+  width: 20%;
+  text-align: right;
+}
+
+/* Task style */
+.task {
+  width: 60vw;
+  margin: 10px auto;
+  font-family: "Baloo 2", cursive;
+}
+
+.task h2 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.task select {
+  width: 60vw;
+  height: 2.5rem;
+  font-size: 20px;
+  padding: 5px 10px;
+}

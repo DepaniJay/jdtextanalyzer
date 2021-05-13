@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="navbar">
+            <h1><i class="fa fa-file-text-o"></i> JD Text Analyzer</h1>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Text Analyzer</h2>
+        <p>Free software utility which allows you to analyze your text. It also count number of characters,words,space,Uppercase word,lowercase word and lines.also you convert your text into Uppercase,lowercase and Capitalize.</p>
+        <form onsubmit="analyzeText(); return false">
+            <textarea class="" id="text" placeholder="Enter your text..."></textarea>
+            <input type="submit" class="btn" id="submit" value="Analyze Text">
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="task" id="taskR">
+        <h2>Convert Text</h2>
+        <form onsubmit="convertText(); return false">
+            <select name="" id="selectTask">
+                <option value="uppercase">Uppercase</option>
+                <option value="lowercase">Lowercase</option>
+            </select>
+            <input type="submit" class="btn" id="taskbtn" value="Convert Text">
+        </form>
+    </div>
+
+
+    <div class="taskResult" id="taskRes">
+
+    </div>
+
+    <div class="result">
+        <h2>Text Analyzer Result</h2>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Characters</span>
+            <span id="noOfChar"></span>
+        </div>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Words</span>
+            <span id="noOfWords"></span>
+        </div>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Sentences</span>
+            <span id="noOfSentences"></span>
+        </div>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Spacial Symbols</span>
+            <span id="noOfSpecialSymboals"></span>
+        </div>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of White Spaces</span>
+            <span id="noOfSpaces"></span>
+        </div>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Digits</span>
+            <span id="noOfDigits"></span>
+        </div>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Vowels</span>
+            <span id="noOfVowels"></span>
+        </div>
+        <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Consonants</span>
+            <span id="noOfConsonants"></span>
+        </div>
+        <!-- <div class="result-box">
+            <span><i class="fa fa-arrow-right"></i> Number of Lines</span>
+            <span id="noOfLines"></span>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
