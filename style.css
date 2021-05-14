@@ -144,3 +144,48 @@ body {
   font-size: 20px;
   padding: 5px 10px;
 }
+
+@media only screen and (max-width: 1100px) and (min-width: 730px) {
+  #nav h1 {
+    font-size: 23px;
+  }
+  .container,
+  .result,
+  .container form textarea,
+  .task,
+  .task form select,
+  .taskResult,
+  .container form {
+    width: 80vw;
+  }
+
+  .container form {
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  #nav {
+    padding: 0;
+  }
+  .navbar {
+    text-align: center;
+    width: 100vw;
+  }
+  .navbar h1 {
+    font-size: 20px;
+  }
+  .container,
+  .result,
+  .container form textarea,
+  .task,
+  .task form select,
+  .taskResult,
+  .container form {
+    width: 80vw;
+  }
+
+  .container form {
+    margin: 10px auto;
+  }
+}
